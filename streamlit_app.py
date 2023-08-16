@@ -1,2 +1,3 @@
-print('Hello, World!')
-print('Hello, Pathon Lovers!')
+import streamlit
+
+streamlit.tile("My Parents New Healthy Dinner")
