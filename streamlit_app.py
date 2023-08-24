@@ -3,9 +3,11 @@ import pandas
 import requests
 import snowflake.connector
 
-fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
-streamlit.write('The user entered ', fruit_choice)
+streamlit.title("My Parents New Healthy Dinner")
 
-streamlit.header("The fruit load list contains:")
-streamlit.dataframe(my_data_row)
-
+streamlit.header('Breakfast Favourites')
+streamlit.text('🥣 Omega 3 & Blueberry Oatmeal')
+streamlit.text('🥗 Kale, Spinach & Rocket Smoothie')
+streamlit.text('🐔 Hard-Boiled Free-Range Egg')
+streamlit.text('🥑🍞 Avacado Toast')
+streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
