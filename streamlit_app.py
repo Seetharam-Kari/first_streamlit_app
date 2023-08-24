@@ -18,5 +18,4 @@ my_cur = my_cnx.cursor()
 my_cur.execute("select * from fruit_load_list")
 
 my_data_row = my_cur.fetchall()
-
 my_cur.execute("insert into fruit_load_list values('from streamlit')")
