@@ -40,8 +40,9 @@ fruit_choice = streamlit.text_input('What fruit would you like information about
 streamlit.write('The user entered ', fruit_choice)
 
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+fruit_choice)
-my_cur.execute("insert into fruit_load_list values('from streamlit')")
+
 # write your own comment -what does the next line do? 
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # write your own comment - what does this do?
 streamlit.dataframe(fruityvice_normalized)
+my_cur.execute("insert into fruit_load_list values('from streamlit')")
